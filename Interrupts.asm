@@ -16,9 +16,9 @@ $INCLUDE (8051.MCU)
 ;====================================================================
 ; VARIABLES
 ;====================================================================
-LED1		BIT		P2.0
-LED2		BIT		P2.1
-LED3		BIT		P2.2
+LED1		BIT		P2.0  ; LED1 is connected to pin 2.0
+LED2		BIT		P2.1  ; LED2 is connected to pin 2.1
+LED3		BIT		P2.2  ; LED3 is connected to pin 2.2
 
 ;====================================================================
 ; RESET and INTERRUPT VECTORS
@@ -26,7 +26,7 @@ LED3		BIT		P2.2
 
       ; Reset Vector
       org   0000h
-      jmp   Start
+      jmp   Start ;Jump to Start 
 
 ;====================================================================
 ; CODE SEGMENT
